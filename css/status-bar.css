@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   padding: 5px 3px;
-  font-weight: 600;
 }
 .status-bar__column {
   width: 33%;

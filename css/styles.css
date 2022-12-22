@@ -18,12 +18,12 @@ body {
 }
 .welcome-header__title {
   margin-bottom: 20px;
-  font-size: 27px;
+  font-size: 25px;
 }
 .welcome-header__text {
-  width: 75%; /*text의 widht값을주고 나서 header의 display -> flex-direction column의 설정후 align-items center(crros axis)를 맞춘다*/
-  opacity: 0.5; /* 글자의 색상이 회색인데 불투명하게 만들어서 색상을 맞출수있음*/
-  font-size: 15px;
+  width: 50%; /*text의 widht값을주고 나서 header의 display -> flex-direction column의 설정후 align-items center(crros axis)를 맞춘다*/
+  opacity: 0.7; /* 글자의 색상이 회색인데 불투명하게 만들어서 색상을 맞출수있음*/
+  font-size: 20px;
 }
 #login-form {
   display: flex;
