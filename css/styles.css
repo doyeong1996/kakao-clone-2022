@@ -7,7 +7,8 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .welcome-header {
-  margin: 90px 0px;
+  margin-top: 90px;
+  margin-bottom: 80px;
   text-align: center; /*text 이기때문에 text-aliign으로 센터를 맞춰도 가능*/
   display: flex;
   flex-direction: column;
@@ -20,9 +21,9 @@ body {
   font-size: 27px;
 }
 .welcome-header__text {
-  width: 50%; /*text의 widht값을주고 나서 header의 display -> flex-direction column의 설정후 align-items center(crros axis)를 맞춘다*/
+  width: 75%; /*text의 widht값을주고 나서 header의 display -> flex-direction column의 설정후 align-items center(crros axis)를 맞춘다*/
   opacity: 0.5; /* 글자의 색상이 회색인데 불투명하게 만들어서 색상을 맞출수있음*/
-  font-size: 20px;
+  font-size: 15px;
 }
 #login-form {
   display: flex;
@@ -43,20 +44,38 @@ body {
   /* pseudo element (가상 클래스 선택자) */
   color: rgba(0, 0, 0, 0.4);
 }
+
+.checkbox {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 13px;
+}
+
+#login-form input[type="text"]:focus,
+#login-form input[type="password"]:focus {
+  transform: translate(-10px, -10px);
+  color: black;
+}
+
 #login-form input:focus {
   border-color: var(--yellow);
 }
 #login-form input[type="submit"] {
   background-color: rgba(0, 0, 0, 0.06);
   cursor: pointer; /*마우스를 가져다가면 클릭포인터로 바뀜*/
-  border-radius: 5px;
+  border-radius: 100px;
   margin-bottom: 12px;
   font-size: 20px;
 }
+#login-form input[type="submit"]:hover {
+  background-color: var(--yellow);
+}
+
 #login-form a {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 50px;
   text-align: center;
   text-decoration: none;
   color: inherit;
-  font-size: 18px;
+  font-size: 13px;
 }

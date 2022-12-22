@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="shortcut Icon" href="screenshots/kakao-logo2.jpg" />
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcomo to kakao clone</title>
+    <title>Welcomo to kakao</title>
   </head>
   <body>
     <div class="status-bar">
@@ -20,7 +21,6 @@
       <div class="status-bar__column">
         <i class="fa-solid fa-lock"></i
         ><!-- Lcok Icon -->
-        <span>11%</span>
         <i class="fas fa-battery-full"></i>100%
         <!-- Battery Icon -->
         <i class="fa-solid fa-bolt"></i>
@@ -37,10 +37,17 @@
 
     <form id="login-form">
       <input type="text" placeholder="Eamil or phone number" />
-      <input type="text" placeholder="Password" />
+      <input type="password" placeholder="Password" />
+      <div class="checkbox">
+        <!-- 체크박스 -->
+        <input type="checkbox" id="remeber_me_check_box" />
+        <label for="remeber_me_check_box">Remember Me</label>
+      </div>
       <input type="submit" value="Log In" />
       <input type="submit" value="Sign Up" />
-      <a href="#">Find Kakao Account or Password</a>
+      <div class="login-form__a">
+        <a href="#">Find Kakao Account or Password</a>
+      </div>
     </form>
 
     <script
