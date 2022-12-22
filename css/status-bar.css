@@ -5,19 +5,24 @@
 }
 .status-bar__column {
   width: 33%;
+  /*정렬하기위해서 column에  폭을 설정하고 중앙 컬럼을 센터로맞추고 마지막 컬럼을 flex-end로 맞춘다*/
 }
 .status-bar__column:first-child span {
   margin-right: 5px;
+  /*No Service와 Icon 의 사이에 padding 제공값 span에 패딩값*/
 }
 .status-bar__column:nth-child(2) {
   display: flex;
   justify-content: center;
+  /*정렬하기위해서 column에  폭을 설정하고 중앙 컬럼을 센터로맞추고 마지막 컬럼을 flex-end로 맞춘다*/
 }
 .status-bar__column:last-child {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  /*정렬하기위해서 column에  폭을 설정하고 중앙 컬럼을 센터로맞추고 마지막 컬럼을 flex-end로 맞춘다*/
 }
 .status-bar__column .fa-battery-full {
   margin: 0px 5px;
+  /*양옆 margin값 설정*/
 }
