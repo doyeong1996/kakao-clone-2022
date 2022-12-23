@@ -49,7 +49,7 @@
 }
 
 #login-form input:focus {
-  border-color: var(--yellow);
+  border-color: #ff6a03;
 }
 #login-form input[type="submit"] {
   background-color: rgba(0, 0, 0, 0.06);
@@ -57,9 +57,11 @@
   border-radius: 100px;
   margin-bottom: 12px;
   font-size: 20px;
+  transition: box-shadow 0.3s ease-in-out;
 }
 #login-form input[type="submit"]:hover {
   background-color: var(--yellow);
+  box-shadow: 0 0 0 1px #ff6a03, 0 0 40px 5px hsla(25, 100%, 51%, 0.3);
 }
 
 #login-form a {

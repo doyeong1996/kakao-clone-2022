@@ -28,20 +28,97 @@
       </div>
     </div>
 
-    <!--네비게이션바-->
-    <nav>
-      <ul>
-        <li>
-          <a href="friends.html"><i class="fa-solid fa-user fa-lg"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-regular fa-comment fa-lg"></i></a>
-        </li>
-        <li>
+    <!--스크린헤더 -->
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span>
           <a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+        </span>
+
+        <span>
+          <a href="#"><i class="fa-sharp fa-solid fa-music fa-lg"></i></a>
+        </span>
+
+        <span>
+          <a href="#"><i class="fa-regular fa-solid fa-gear fa-lg"></i></a>
+        </span>
+      </div>
+    </header>
+
+    <!-- 친구이름 검색창 -->
+    <div class="screen-search">
+      <input class="screen-search__text" type="text" placeholder="Useer Name" />
+      <input class="screen-search__submit" type="submit" value="Search" />
+    </div>
+
+    <!-- 메인프로필 미니바 -->
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="screenshots/kakao-profile.jpg"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Doyoeng</h4>
+            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+          </div>
+        </div>
+
+        <div class="user-component__column"></div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="firends-screen__channel-header">
+          <span>Channel</span><i class="fa-sharp fa-solid fa-chevron-up"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="screenshots/kakao-profile.jpg"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Channel
+              </h4>
+              <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+            </div>
+          </div>
+
+          <div class="user-component__column">
+            <span>2</span>
+            <i class="fa-sharp fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--네비게이션바-->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fa-solid fa-user fa-2x"></i>
+          </a>
         </li>
-        <li>
-          <a href="#"><i class="fa-solid fa-gear fa-lg"></i></a>
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <span class="nav__notification">1</span>
+            <i class="fa-regular fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <span class="nav__dot"></span>
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
         </li>
       </ul>
     </nav>

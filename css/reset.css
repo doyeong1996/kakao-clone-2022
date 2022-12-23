@@ -125,3 +125,7 @@ table {
 input:focus {
   outline: none; /* 모든 input에 outline 적용안함 */
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
