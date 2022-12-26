@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -15px;
 }
 .screen-search__text {
   border: none;
@@ -36,7 +37,7 @@
 }
 .friends-screen__channel {
   margin-top: 15px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: var(--main-border);
   padding-top: 13px;
 }
 .firends-screen__channel-header {

@@ -17,14 +17,6 @@
   color: #2e363e;
 }
 .nav__notification {
-  background-color: tomato;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  color: white;
   position: absolute; /* absolute 의 조건이 가장 가까운 부모의 기준으로 움직이기때문에 부모에게 relative를 설정해야된다. */
   left: 20px;
   bottom: 15px;

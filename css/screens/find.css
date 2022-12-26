@@ -1,0 +1,113 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.find-icons__icon i {
+  font-size: 30px;
+  color: rgb(61, 60, 60);
+}
+.find-icons__icon span {
+  margin-top: 18px;
+}
+.recommended-friends {
+  margin: 25px 0px;
+  padding: 25px 0px;
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+.recommended-friends__title {
+  font-size: 15px;
+  color: var(--gray);
+  font-weight: 500;
+}
+.recommended-friends span {
+  display: block;
+  margin: 100px 0px;
+  text-align: center;
+  color: var(--gray);
+  font-size: 18px;
+  font-weight: 500;
+}
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.open-chat__header span {
+  opacity: 0.5;
+  font-size: 14px;
+}
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--main-border);
+  padding: 10px;
+}
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.open-post__hashtags {
+  text-transform: uppercase; /*소문자를 대문자로 변환*/
+  opacity: 0.5;
+  font-weight: 600;
+  font-size: 14px;
+}
+.open-post__members {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+.open-post__members img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.open-post__member-count {
+  opacity: 0.5;
+  font-weight: 600;
+  font-size: 13px;
+}
+.open-post__members .divider {
+  width: 2px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0px 5px;
+}
+.open-post__member-status {
+  color: #ff70c6;
+}
+.open-post__column {
+  position: relative;
+}
+.open-post__photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+.open-post__heartbox {
+  width: 40px;
+  height: 12px;
+  background-color: #ff70c6;
+  padding: 5px 8px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  position: absolute;
+  left: 55px;
+  bottom: 11px;
+  font-size: 13px;
+}
+.open-post__heartbox i {
+  margin-right: 4px;
+}

@@ -1,0 +1,15 @@
+.screen-header__icons {
+  position: relative;
+}
+.screen-header__icons-dot {
+  display: flex;
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 70px;
+  bottom: 18px;
+}

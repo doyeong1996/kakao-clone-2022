@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends</title>
+    <title>Find</title>
   </head>
   <body>
     <div class="status-bar">
@@ -30,70 +30,71 @@
 
     <!--스크린헤더 -->
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Find</h1>
       <div class="screen-header__icons">
         <span>
           <a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
         </span>
-
-        <span>
-          <a href="#"><i class="fa-sharp fa-solid fa-music fa-lg"></i></a>
-        </span>
-
         <span>
           <a href="#"><i class="fa-regular fa-solid fa-gear fa-lg"></i></a>
+          <span class="screen-header__icons-dot"></span>
         </span>
       </div>
     </header>
 
-    <!-- 친구이름 검색창 -->
-    <div class="screen-search">
-      <input class="screen-search__text" type="text" placeholder="Useer Name" />
-      <input class="screen-search__submit" type="submit" value="Search" />
-    </div>
-
-    <!-- 메인프로필 미니바 -->
-
-    <main class="friends-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="screenshots/kakao-profile.jpg"
-            class="user-component__avatar user-component__avatar--xl"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Doyoeng</h4>
-            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
-          </div>
+    <main class="main-screen">
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-qrcode"></i>
+          <span>QR Code</span>
         </div>
-
-        <div class="user-component__column"></div>
+        <div class="find-icons__icon">
+          <i class="fa-regular fa-address-book"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-plus"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Invite</span>
+        </div>
       </div>
-
-      <!-- 채널 프로필 + 미니프로필 -->
-
-      <div class="friends-screen__channel">
-        <div class="firends-screen__channel-header">
-          <span>Channel</span><i class="fa-sharp fa-solid fa-chevron-up"></i>
+      <div class="recommended-friends">
+        <h3 class="recommended-friends__title">Recommended Friends</h3>
+        <span>You have no recommended friends</span>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span>
+            Go to Openchat Home
+            <i class="fa-sharp fa-solid fa-chevron-right"></i>
+          </span>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="screenshots/kakao-profile.jpg"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
-              <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#BTS</h5>
+            <h6 class="open-post__hashtags">#bts #army #friends</h6>
+            <div class="open-post__members">
+              <img
+                src="file:///C:/Users/kimwo/Desktop/kakao-clone-2022/screenshots/kakao-profile.jpg"
+              />
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
             </div>
           </div>
 
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fa-sharp fa-solid fa-chevron-right"></i>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="file:///C:/Users/kimwo/Desktop/kakao-clone-2022/screenshots/kakao-profile.jpg"
+              />
+              <div class="open-post__heartbox">
+                <i class="fa-solid fa-heart"></i><span>326</span>
+              </div>
             </div>
           </div>
         </div>
@@ -105,7 +106,7 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html">
-            <i class="fa-solid fa-user fa-2x"></i>
+            <i class="fa-regular fa-user fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
