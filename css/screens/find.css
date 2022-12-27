@@ -50,9 +50,10 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: var(--main-border);
-  padding: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
-.open-post__title {
+.open-post .open-post__title {
   font-weight: 600;
   margin-bottom: 7px;
 }
@@ -87,27 +88,28 @@
 .open-post__member-status {
   color: #ff70c6;
 }
-.open-post__column {
-  position: relative;
+.open-post__photo {
+  position: relative; /* open-post__heart-count의 position */
 }
 .open-post__photo img {
   width: 120px;
   height: 120px;
   border-radius: 10px;
 }
-.open-post__heartbox {
+.open-post__heart-count {
   width: 40px;
   height: 12px;
-  background-color: #ff70c6;
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 5px 8px;
+  display: flex;
   text-align: center;
   border-radius: 20px;
   color: white;
   position: absolute;
-  left: 55px;
-  bottom: 11px;
+  bottom: 10px;
+  right: 10px;
   font-size: 13px;
 }
-.open-post__heartbox i {
-  margin-right: 4px;
+.open-post__heart-count span {
+  margin-left: 4px;
 }
