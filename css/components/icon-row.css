@@ -1,0 +1,25 @@
+.icon-row {
+  display: flex;
+}
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding: 20px 0px;
+}
+.icon-row__icon i {
+  font-size: 30px;
+  color: rgb(61, 60, 60);
+}
+.icon-row__icon span {
+  margin-top: 18px;
+  text-align: center;
+}
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding: 20px 0px;
+}
