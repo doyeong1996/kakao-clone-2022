@@ -1,7 +1,7 @@
 .more-screen .icon-row {
-  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 .more-suggestions {
   margin-top: 30px;
@@ -10,9 +10,38 @@
 }
 .more-suggestions__title {
   margin-bottom: 30px;
+  font-weight: 600;
+  opacity: 0.8;
 }
-.more-suggestions__icon-image {
+.more-suggestions__icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.more-suggestions__icon {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 25%;
+  padding: 10px 0px;
+}
+.more-suggestions__icon-image {
+  margin-bottom: 10px;
+  width: 55px;
+  height: 55px;
+  background-color: var(--yellow);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.more-suggestions__icon-image i {
+  font-size: 25px;
+  color: white;
+}
+
+.more-suggestions__icon-text {
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.5;
+  font-weight: 500;
 }

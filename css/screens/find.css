@@ -36,6 +36,7 @@
   border-bottom: var(--main-border);
   padding-bottom: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .open-post .open-post__title {
   font-weight: 600;

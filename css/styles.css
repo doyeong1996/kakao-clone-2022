@@ -13,9 +13,9 @@
 /* screens */
 @import "screens/login.css";
 @import "screens/friends.css";
-@import "screens/chats.css";
 @import "screens/find.css";
 @import "screens/more.css";
+@import "screens/settings.css";
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
