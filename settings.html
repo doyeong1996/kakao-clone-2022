@@ -22,7 +22,7 @@
       <div class="status-bar__column">
         <i class="fa-solid fa-lock"></i
         ><!-- Lcok Icon -->
-        <i class="fas fa-battery-full"></i>100%
+        100%<i class="fas fa-battery-full"></i>
         <!-- Battery Icon -->
         <i class="fa-solid fa-bolt"></i>
         <!-- Bolt Icon -->
@@ -30,109 +30,97 @@
     </div>
 
     <!--스크린헤더 -->
-    <header class="setting-bar">
-      <div class="setting-bar__column">
+
+    <header class="alt-header">
+      <div class="alt-header__column">
         <a href="more.html">
           <i class="fa-sharp fa-solid fa-chevron-left fa-lg"></i>
         </a>
       </div>
-      <div class="setting-bar__column">
-        <span>Settings</span>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Settings</h1>
       </div>
-      <div class="setting-bar__column">
+      <div class="alt-header__column">
         <i class="fa-solid fa-magnifying-glass fa-lg"></i>
       </div>
     </header>
 
     <!-- 메인스크린 -->
     <main class="main-screen">
-      <div class="setting-mainscreen">
-        <div class="setting-component">
-          <div class="setting-component__column">
+      <ul class="setting-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
             <i class="fa-solid fa-bullhorn"></i>
-            <div class="setting-component__text">Notices</div>
+            <span>Notices</span>
           </div>
-          <div class="setting-component__column"></div>
-        </div>
-
-        <div class="setting-component">
-          <div class="setting-component__column">
-            <i class="fa-solid fa-vial"></i>
-            <div class="setting-component__text">Kakao Lab</div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-flask"></i>
+            <span>Kakao Lab</span>
           </div>
-          <div class="setting-component__column"></div>
-        </div>
-
-        <div class="setting-component">
-          <div class="setting-component__column">
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
             <i class="fa-solid fa-circle-info"></i>
-            <div class="setting-component__text">Version</div>
+            <span>Version</span>
           </div>
-          <div class="setting-component__column">
-            <span class="setting-component__subtitle">Latest Version</span>
-          </div>
-        </div>
-
-        <div class="setting-component">
-          <div class="setting-component__column">
+          <div class="settings__setting-column">Latest Version</div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
             <i class="fa-solid fa-lock"></i>
-            <div class="setting-component__text">Privacy</div>
+            <span>Privacy</span>
           </div>
-          <div class="setting-component__column"></div>
-        </div>
-
-        <div class="setting-component">
-          <div class="setting-component__column">
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
             <i class="fa-solid fa-bell"></i>
-            <div class="setting-component__text">Notifications</div>
+            <span>Notifications</span>
           </div>
-          <div class="setting-component__column"></div>
-        </div>
-
-        <div class="setting-component">
-          <div class="setting-component__column">
-            <i class="fa-solid fa-user-group"></i>
-            <div class="setting-component__text">Friends</div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span>Friends</span>
           </div>
-          <div class="setting-component__column"></div>
-        </div>
-
-        <div class="setting-component">
-          <div class="setting-component__column">
-            <i class="fa-solid fa-comment"></i>
-            <div class="setting-component__text">Chats</div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-regular fa-comment"></i>
+            <span>Chats</span>
           </div>
-          <div class="setting-component__column"></div>
-        </div>
-
-        <div class="setting-component">
-          <div class="setting-component__column">
-            <i class="fa-solid fa-mobile-screen"></i>
-            <div class="setting-component__text">Display</div>
-            <span class="setting-component__dot">N</span>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <span>Displaay</span>
+            <span class="settings__setting-dot">N</span>
           </div>
-          <div class="setting-component__column"></div>
-        </div>
-
-        <div class="setting-component">
-          <div class="setting-component__column">
-            <i class="fa-solid fa-paint-roller"></i>
-            <div class="setting-component__text">Themes</div>
-            <span class="setting-component__dot">N</span>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-brush"></i>
+            <span>Themes</span>
+            <span class="settings__setting-dot">N</span>
           </div>
-          <div class="setting-component__column">
-            <div class="setting-component__subtitle">Default theme</div>
+          <div class="settings__setting-column">Default theme</div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>Call</span>
           </div>
-        </div>
-
-        <div class="setting-component">
-          <div class="setting-component__column">
-            <i class="fa-solid fa-phone"></i>
-            <div class="setting-component__text">Call</div>
-          </div>
-          <div class="setting-component__column"></div>
-        </div>
-      </div>
+          <div class="settings__setting-column"></div>
+        </li>
+      </ul>
     </main>
 
     <!--네비게이션바-->

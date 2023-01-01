@@ -1,84 +1,29 @@
-.setting-bar {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 15px;
-  box-sizing: border-box;
-  position: fixed;
-  top: 30px;
-}
-.setting-bar__column {
-  width: 33%;
-}
-
-.setting-bar__column span {
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: 500;
-}
-.setting-bar__column:last-child {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.setting-bar__column i {
-  font-size: 25px;
-}
-
-/* main screen css */
-.setting-mainscreen {
-  padding-top: 100px;
-}
-.setting-component {
+.settings__setting {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 20px;
   display: flex;
   align-items: center;
-  /*padding: 10px 0px;*/
-  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
   justify-content: space-between;
 }
-.setting-component:hover {
+.settings__setting:hover {
   background-color: rgba(0, 0, 0, 0.02);
-  border-radius: 7px;
   cursor: pointer;
 }
-.setting-component__column {
-  display: flex;
-  padding: 25px 0px;
-}
-.setting-component__column i {
-  margin-right: 15px;
-  font-size: 20px;
+.settings__setting i {
+  margin-right: 20px;
+  font-size: 22px;
   opacity: 0.8;
 }
-.setting-component__text {
-  font-size: 20px;
-}
-.setting-component__subtitle {
+
+.settings__setting-column:last-child {
   opacity: 0.5;
-  font-weight: 500;
-  font-size: 17px;
 }
-
-/*.setting-component__column span {
-  color: white;
-  text-align: center;
-  font-size: 12px;
-  justify-content: center;
-}*/
-
-.setting-component__dot {
-  display: flex;
-  color: white;
-  text-align: center;
-  font-size: 13px;
-  justify-content: center;
-  padding: 3px;
-  width: 15px;
-  height: 15px;
+.settings__setting-dot {
   background-color: tomato;
   border-radius: 50%;
-  justify-content: center;
-  margin-left: 10px;
+  color: white;
+  font-size: 11px;
+  padding: 2px 4px;
   font-weight: 500;
 }

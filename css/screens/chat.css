@@ -1,0 +1,69 @@
+#chat-screen {
+  background-color: #abc1d1;
+  height: 11000vh;
+}
+#chat-screen .alt-header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0px;
+  background-color: #abc1d1;
+}
+#chat-screen .status-bar {
+  /* 위에 코드랑 같이 배열해도되지만 이미 top:0 을 설정해놓아서 다른 세부사항들은 따로배치*/
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #abc1d1;
+}
+.main-chat {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column; /*수평이된 세로축을 기준으로 중앙정렬하면 가운데로온다 column을 했을경우 세로와 가로의 축이바뀜*/
+  align-items: center;
+  font-size: 14px;
+}
+#chat-screen .alt-header {
+  z-index: 1;
+}
+.chat__timestamp {
+  color: white;
+  background-color: #92a4b2;
+  padding: 8px 15px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+.message-row {
+  width: 100%;
+  display: flex;
+}
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+.message__author {
+  opacity: 0.7;
+  font-size: 13px;
+  margin-bottom: 7px;
+  display: block;
+  font-weight: 500;
+}
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+.message__bubble {
+  background-color: white;
+  padding: 13px;
+  border-radius: 15px;
+  border-top-left-radius: 0px; /*border-radius의 모서리의 각*/
+  margin-right: 5px;
+}
+.message__time {
+  opacity: 0.7;
+  font-size: 12px;
+  font-weight: 500;
+}
