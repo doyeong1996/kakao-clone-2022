@@ -74,3 +74,27 @@
   font-size: 14px;
   font-weight: 600;
 }
+/*login page Animation */
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden; /*애니메이션효과 실행 후 마우스에 걸리지않게 빠져버리는 효과 하지만 js를 써야한다*/
+  }
+}
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 123px;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 2s;
+}

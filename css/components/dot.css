@@ -1,7 +1,7 @@
-.screen-header__icons {
+.screen-header__icons span {
   position: relative;
 }
-.screen-header__icons-dot {
+.screen-header__icons-dot-find {
   display: flex;
   background-color: tomato;
   width: 5px;
@@ -10,6 +10,18 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 120px;
-  bottom: 18px;
+  left: 70px;
+  bottom: 20px;
+}
+.screen-header__icons-dot-more {
+  display: flex;
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 75px;
+  bottom: 25px;
 }
