@@ -126,7 +126,7 @@
   width: 100%;
   border: var(--main-border);
   border-radius: 23px;
-  transition: all 0.3s ease-in-out; /* input transition*/
+  transition: transform 0.3s ease-in-out; /* input transition*/
 }
 /*.reply input::placeholder {
   padding: 11px;
@@ -176,7 +176,7 @@
 .reply:focus-within button {
   transform: translateX(-3px) translateY(-50px);
 }
-.reply:focus-within input {
+.reply input:focus {
   width: 89vw;
   transform: translateX(-12%) translateY(-50px);
 }
