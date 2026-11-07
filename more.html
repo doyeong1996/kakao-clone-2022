@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <link rel="icon" href="screenshots/kakao-logo2.jpg" />
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>More</title>
+    <script src="js/app.js" defer></script>
   </head>
   <body>
     <!-- 스타투스바 -->
@@ -21,7 +21,7 @@
         <!-- Wifi Icon -->
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
+        <span class="status-bar__time">18:43</span>
       </div>
       <div class="status-bar__column">
         100%<i class="fas fa-battery-full"></i>
@@ -76,7 +76,7 @@
       <div class="icon-row">
         <div class="icon-row__icon">
           <a href="#"><i class="fa-regular fa-calendar"></i></a>
-          <span>Calender</span>
+          <span>Calendar</span>
         </div>
         <div class="icon-row__icon">
           <a href="#"><i class="fa-brands fa-google-drive"></i></a>
@@ -104,44 +104,44 @@
         <div class="more-suggestions__icons">
           <div class="more-suggestions__icon">
             <div class="more-suggestions__icon-image">
-              <a href="#"><i class="fa-solid fa-quote-right"></i></a>
+              <a href="#" aria-label="Kakao Story"><i class="fa-solid fa-quote-right"></i></a>
             </div>
             <span class="more-suggestions__icon-text">Kakao Story</span>
           </div>
 
           <div class="more-suggestions__icon">
             <div class="more-suggestions__icon-image">
-              <a href="#"><i class="fa-solid fa-quote-right"></i></a>
+              <a href="#" aria-label="Kakao Friends"><i class="fa-solid fa-face-smile-beam"></i></a>
             </div>
             <span class="more-suggestions__icon-text">Kakao Friends</span>
           </div>
 
           <div class="more-suggestions__icon">
             <div class="more-suggestions__icon-image">
-              <a href="#"><i class="fa-solid fa-quote-right"></i></a>
+              <a href="#" aria-label="Kakao Game"><i class="fa-solid fa-gamepad"></i></a>
             </div>
             <span class="more-suggestions__icon-text">Kakao Game</span>
           </div>
 
           <div class="more-suggestions__icon">
             <div class="more-suggestions__icon-image">
-              <a href="#"><i class="fa-solid fa-quote-right"></i></a>
+              <a href="#" aria-label="Kakao Map"><i class="fa-solid fa-map-location-dot"></i></a>
             </div>
-            <span class="more-suggestions__icon-text">Kakao Game</span>
+            <span class="more-suggestions__icon-text">Kakao Map</span>
           </div>
 
           <div class="more-suggestions__icon">
             <div class="more-suggestions__icon-image">
-              <a href="#"><i class="fa-solid fa-quote-right"></i></a>
+              <a href="#" aria-label="Kakao Page"><i class="fa-solid fa-book-open"></i></a>
             </div>
-            <span class="more-suggestions__icon-text">Kakao Game</span>
+            <span class="more-suggestions__icon-text">Kakao Page</span>
           </div>
 
           <div class="more-suggestions__icon">
             <div class="more-suggestions__icon-image">
-              <a href="#"><i class="fa-solid fa-quote-right"></i></a>
+              <a href="#" aria-label="Kakao Webtoon"><i class="fa-solid fa-image"></i></a>
             </div>
-            <span class="more-suggestions__icon-text">Kakao Game</span>
+            <span class="more-suggestions__icon-text">Kakao Webtoon</span>
           </div>
         </div>
       </div>
@@ -167,7 +167,7 @@
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="more.html" aria-label="More">
+          <a class="nav__link" href="more.html" aria-current="page" aria-label="More">
             <span class="nav__dot"></span>
             <i class="fa-solid fa-ellipsis fa-2x"></i>
           </a>

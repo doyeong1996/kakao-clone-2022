@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <link rel="icon" href="screenshots/kakao-logo2.jpg" />
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat</title>
+    <script src="js/app.js" defer></script>
   </head>
   <body id="chat-screen">
     <!-- 스타투스바 -->
@@ -21,7 +21,7 @@
         <!-- Wifi Icon -->
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
+        <span class="status-bar__time">18:43</span>
       </div>
       <div class="status-bar__column">
         100%<i class="fas fa-battery-full"></i>
@@ -47,7 +47,7 @@
 
     <!-- 메인스크린 -->
     <main class="main-screen main-chat">
-      <div class="chat__timestamp">Tuesday, June 30, 2022</div>
+      <div class="chat__timestamp">Thursday, June 30, 2022</div>
 
       <div class="message-row">
         <img src="screenshots/kakao-profile.jpg" alt="Profile picture" />
@@ -75,9 +75,9 @@
         <i class="fa-regular fa-square-plus fa-lg"></i>
       </div>
       <div class="reply__column">
-        <input type="text" placeholder="write a message..." aria-label="write a message" />
+        <input type="text" placeholder="write a message..." aria-label="write a message" autocomplete="off" />
         <i class="far fa-smile-wink"></i>
-        <button aria-label="Send message">
+        <button type="submit" aria-label="Send message">
           <i class="fa-solid fa-arrow-up"></i>
         </button>
       </div>

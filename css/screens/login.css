@@ -22,7 +22,7 @@
   flex-direction: column;
   margin: 0px 30px;
 }
-#login-form input {
+#login-form input:not([type="checkbox"]) {
   border: none; /*input 테두리를 삭제함*/
   padding: 15px 0px;
   font-size: 18px;
@@ -95,6 +95,7 @@
   justify-content: center;
   align-items: center;
   font-size: 123px;
+  z-index: 20; /* 고정된 상태바(z-index: 10) 위를 덮도록 */
   animation: hideSplashScreen 0.4s ease-in-out forwards;
   animation-delay: 2s;
 }

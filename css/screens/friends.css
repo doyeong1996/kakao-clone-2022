@@ -32,6 +32,12 @@
 .screen-search__submit:hover {
   box-shadow: 0 0 0 1px #ff6a03, 0 0 40px 5px hsla(25, 100%, 51%, 0.3);
 }
+.screen-search__empty {
+  margin: 30px 0;
+  text-align: center;
+  color: var(--gray);
+  font-weight: 500;
+}
 .friends-screen {
   padding: 0px var(--horizontal-space);
 }

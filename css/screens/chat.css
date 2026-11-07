@@ -37,6 +37,15 @@
   font-size: 14px;
   animation: fadeIn 0.5s linear;
 }
+/* JS 로 새로 추가된 메시지 등장 애니메이션 */
+.message-row--new {
+  animation: fadeIn 0.3s ease-out;
+}
+.message__bubble {
+  max-width: 240px;
+  line-height: 1.3;
+  word-break: break-word; /* 긴 단어/URL 이 말풍선 밖으로 넘치지 않도록 */
+}
 #chat-screen .alt-header {
   z-index: 1;
 }

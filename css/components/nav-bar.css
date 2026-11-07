@@ -21,6 +21,15 @@
   justify-content: space-between;
   align-items: center;
 }
+/* 현재 페이지 탭은 진하게, 나머지는 흐리게 표시 */
+.nav__link > i {
+  opacity: 0.4;
+  transition: opacity 0.2s ease-in-out;
+}
+.nav__link:hover > i,
+.nav__link[aria-current="page"] > i {
+  opacity: 1;
+}
 .nav__link {
   position: relative;
   color: #2e363e;

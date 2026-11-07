@@ -7,6 +7,9 @@
   position: fixed;
   width: 100%;
   box-sizing: border-box;
+  /* 스크롤할 때 아래 콘텐츠가 상태바 글자와 겹쳐 보이지 않도록 배경과 z-index 지정 */
+  background-color: white;
+  z-index: 10;
 }
 .status-bar__column {
   width: 33%;

@@ -54,3 +54,36 @@ body {
 .main-screen {
   padding: 0px var(--horizontal-space);
 }
+
+/* 하단 고정 내비게이션바/입력창에 마지막 콘텐츠가 가려지지 않도록 여백 확보 */
+.main-screen,
+.friends-screen {
+  padding-bottom: var(--nav-height);
+}
+
+/* display:flex 등이 걸린 요소도 hidden 속성이 확실히 적용되도록 */
+[hidden] {
+  display: none !important;
+}
+
+/* 키보드로 탐색할 때만 포커스 테두리 표시 (마우스 클릭 시에는 안 보임) */
+a:focus-visible,
+button:focus-visible,
+input[type="submit"]:focus-visible,
+input[type="checkbox"]:focus-visible {
+  outline: 2px solid #ff6a03;
+  outline-offset: 2px;
+}
+
+/* OS 에서 '동작 줄이기'를 켠 사용자에게는 애니메이션 최소화 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

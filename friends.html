@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <link rel="icon" href="screenshots/kakao-logo2.jpg" />
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Friends</title>
+    <script src="js/app.js" defer></script>
   </head>
   <body>
     <div class="status-bar">
@@ -20,7 +20,7 @@
         <!-- Wifi Icon -->
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
+        <span class="status-bar__time">18:43</span>
       </div>
       <div class="status-bar__column">
         100%<i class="fas fa-battery-full"></i>
@@ -47,10 +47,11 @@
     </header>
 
     <!-- 친구이름 검색창 -->
-    <div class="screen-search">
-      <input class="screen-search__text" type="text" placeholder="User Name" aria-label="User Name" />
+    <form class="screen-search" role="search">
+      <input class="screen-search__text" type="search" placeholder="User Name" aria-label="User Name" autocomplete="off" />
       <input class="screen-search__submit" type="submit" value="Search" />
-    </div>
+    </form>
+    <p class="screen-search__empty" hidden>No friends found</p>
 
     <!-- 메인프로필 미니바 -->
 
@@ -106,7 +107,7 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
-          <a class="nav__link" href="friends.html" aria-label="Friends">
+          <a class="nav__link" href="friends.html" aria-current="page" aria-label="Friends">
             <i class="fa-solid fa-user fa-2x"></i>
           </a>
         </li>

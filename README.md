@@ -18,7 +18,7 @@ HTML과 CSS만으로 카카오톡 모바일 화면을 따라 만든 첫 번째 �
 
 ## 사용 기술
 
-- HTML5, CSS3 (JavaScript 없음)
+- HTML5, CSS3, 바닐라 JavaScript (프레임워크 없음)
 - Flexbox 레이아웃, CSS 변수, `@keyframes` 애니메이션, `:focus-within`
 - [Font Awesome 6 Free](https://fontawesome.com/) 아이콘
 - GitHub Pages 배포
@@ -51,7 +51,26 @@ css/
 - 만료될 수 있는 Font Awesome Kit 대신 무료 CDN 사용, Pro 전용 `fa-sharp` 제거
 - 이미지 `alt`, 아이콘 버튼 `aria-label` 추가 (접근성)
 
+### 2차 개선
+
+- **JavaScript 추가** (`js/app.js`, 바닐라 JS)
+  - 채팅방에서 메시지 입력 후 Enter/전송 버튼으로 내 말풍선 추가 (`textContent` 사용으로 XSS 방지)
+  - 친구 목록 이름 검색 (입력 즉시 필터링, 결과 없음 안내)
+  - 상태바 시계를 현재 시각으로 표시
+- **버그 수정**
+  - `settings.html` 닫히지 않은 `<div>` 수정
+  - 하단 고정 내비게이션바에 마지막 콘텐츠가 가려지던 문제 (`padding-bottom`)
+  - 스크롤 시 콘텐츠가 투명한 상태바와 겹쳐 보이던 문제 (배경색 + `z-index`)
+  - 로그인 체크박스에 텍스트 입력창 스타일이 적용되던 문제 (`:not([type="checkbox"])`)
+  - 2022년 6월 30일 요일 수정 (Tuesday → Thursday), 오타 수정 (Calendar, Version)
+  - 더보기 화면에 반복되던 "Kakao Game" 항목을 서로 다른 항목/아이콘으로 교체
+- **UX / 접근성**
+  - 현재 페이지 탭을 진하게 표시 (`aria-current="page"`)
+  - 키보드 사용자를 위한 `:focus-visible` 포커스 테두리
+  - `prefers-reduced-motion` 사용자에게 애니메이션 최소화
+  - `<meta charset>` 을 `<head>` 맨 앞으로 이동, 입력창 `autocomplete` 속성 추가
+
 ## 다음 목표
 
-- JavaScript로 메시지 전송 기능 만들기
 - 반복되는 상태바 / 내비게이션을 컴포넌트로 분리하기
+- 보낸 메시지를 `localStorage` 에 저장해 새로고침 후에도 유지하기
