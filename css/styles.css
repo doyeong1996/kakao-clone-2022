@@ -47,9 +47,6 @@ body {
     margin: 0 auto;
     max-width: var(--app-width);
   }
-  .reply input:focus {
-    width: calc(var(--app-width) * 0.89);
-  }
 }
 .main-screen {
   padding: 0px var(--horizontal-space);
