@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="screenshots/kakao-logo2.jpg" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+  </head>
+  <body id="chat-screen">
+    <!-- 스타투스바 -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+        <!-- Wifi Icon -->
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        100%<i class="fas fa-battery-full"></i>
+        <!-- Battery Icon -->
+      </div>
+    </div>
+
+    <!--스크린헤더 -->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html" aria-label="Back">
+          <i class="fa-solid fa-chevron-left fa-lg"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">doyeong</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fa-solid fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <!-- 메인스크린 -->
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 30, 2022</div>
+
+      <div class="message-row">
+        <img src="screenshots/kakao-profile.jpg" alt="Profile picture" />
+        <div class="message-row__content">
+          <span class="message__author">doyeong</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Hi nice to meet you!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-regular fa-square-plus fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="write a message..." aria-label="write a message" />
+        <i class="far fa-smile-wink"></i>
+        <button aria-label="Send message">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

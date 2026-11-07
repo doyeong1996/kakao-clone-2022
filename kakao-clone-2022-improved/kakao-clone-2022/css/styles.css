@@ -1,0 +1,56 @@
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/dot.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+
+/* screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  position: relative;
+  display: flow-root; /* 자식의 margin-top 이 body 밖으로 새어나가지 않게 */
+  background-color: white;
+}
+
+/* Desktop: show the app in a phone-sized column instead of blocking the page */
+@media screen and (min-width: 591px) {
+  html {
+    background-color: #f2f2f2;
+  }
+  body {
+    max-width: var(--app-width);
+    margin: 0 auto;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+  }
+  .nav,
+  .reply,
+  #chat-screen .alt-header,
+  .status-bar {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: var(--app-width);
+  }
+  .reply input:focus {
+    width: calc(var(--app-width) * 0.89);
+  }
+}
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
