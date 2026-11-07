@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="shortcut Icon" href="screenshots/kakao-logo2.jpg" />
+    <link rel="icon" href="screenshots/kakao-logo2.jpg" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,13 +34,13 @@
       <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span>
-          <a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+          <a href="#" aria-label="Search"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
         </span>
         <span>
-          <a href="#"><i class="fa-sharp fa-solid fa-music fa-lg"></i></a>
+          <a href="#" aria-label="Music"><i class="fa-solid fa-music fa-lg"></i></a>
         </span>
         <span>
-          <a href="settings.html">
+          <a href="settings.html" aria-label="Settings">
             <i class="fa-regular fa-solid fa-gear fa-lg"></i>
           </a>
           <span class="screen-header__icons-dot-more"></span>
@@ -49,6 +53,7 @@
         <div class="user-component__column">
           <img
             src="screenshots/kakao-profile.jpg"
+            alt="Profile picture"
             class="user-component__avatar user-component__avatar--sm"
           />
           <div class="user-component__text">
@@ -146,37 +151,28 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
-          <a class="nav__link" href="friends.html">
+          <a class="nav__link" href="friends.html" aria-label="Friends">
             <i class="fa-regular fa-user fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
+          <a class="nav__link" href="chats.html" aria-label="Chats">
             <span class="nav__notification badge">1</span>
             <i class="fa-regular fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="find.html">
+          <a class="nav__link" href="find.html" aria-label="Search">
             <i class="fa-solid fa-magnifying-glass fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="more.html">
+          <a class="nav__link" href="more.html" aria-label="More">
             <span class="nav__dot"></span>
             <i class="fa-solid fa-ellipsis fa-2x"></i>
           </a>
         </li>
       </ul>
     </nav>
-
-    <div id="no-mobile">
-      <span>Your screen is too BIG</span>
-    </div>
-
-    <script
-      src="https://kit.fontawesome.com/4c2ac44dc0.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

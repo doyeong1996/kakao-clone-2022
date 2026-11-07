@@ -82,14 +82,14 @@
   }
   to {
     opacity: 0;
-    visibility: hidden; /*애니메이션효과 실행 후 마우스에 걸리지않게 빠져버리는 효과 하지만 js를 써야한다*/
+    visibility: hidden; /*애니메이션이 끝나면 클릭이 통과되도록 숨김 (keyframes 안의 visibility 로 JS 없이 가능)*/
   }
 }
 #splash-screen {
   background-color: var(--yellow);
   position: absolute;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   top: 0;
   display: flex;
   justify-content: center;

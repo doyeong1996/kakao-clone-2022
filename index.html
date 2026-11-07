@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="shortcut Icon" href="screenshots/kakao-logo2.jpg" />
+    <link rel="icon" href="screenshots/kakao-logo2.jpg" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcomo to kakao login-page</title>
+    <title>Welcome to KakaoTalk</title>
   </head>
   <body>
     <div class="status-bar">
@@ -32,12 +36,12 @@
     </header>
 
     <form action="friends.html" method="get" id="login-form">
-      <input type="text" placeholder="Eamil or phone number" />
-      <input type="password" placeholder="Password" />
+      <input type="text" placeholder="Email or phone number" aria-label="Email or phone number" />
+      <input type="password" placeholder="Password" aria-label="Password" />
       <div class="checkbox">
         <!-- 체크박스 -->
-        <input type="checkbox" id="remeber_me_check_box" />
-        <label for="remeber_me_check_box">Remember Me</label>
+        <input type="checkbox" id="remember_me_check_box" />
+        <label for="remember_me_check_box">Remember Me</label>
       </div>
       <input type="submit" value="Log In" />
       <input type="submit" value="Sign Up" />
@@ -49,14 +53,5 @@
     <div id="splash-screen">
       <i class="fa-solid fa-comment"></i>
     </div>
-
-    <div id="no-mobile">
-      <span>Your screen is too BIG</span>
-    </div>
-
-    <script
-      src="https://kit.fontawesome.com/4c2ac44dc0.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

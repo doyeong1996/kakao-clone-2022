@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="shortcut Icon" href="screenshots/kakao-logo2.jpg" />
+    <link rel="icon" href="screenshots/kakao-logo2.jpg" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,8 +32,8 @@
     <!--스크린헤더 -->
     <header class="alt-header">
       <div class="alt-header__column">
-        <a href="chats.html">
-          <i class="fa-sharp fa-solid fa-chevron-left fa-lg"></i>
+        <a href="chats.html" aria-label="Back">
+          <i class="fa-solid fa-chevron-left fa-lg"></i>
         </a>
       </div>
       <div class="alt-header__column">
@@ -46,7 +50,7 @@
       <div class="chat__timestamp">Tuesday, June 30, 2022</div>
 
       <div class="message-row">
-        <img src="screenshots/kakao-profile.jpg" />
+        <img src="screenshots/kakao-profile.jpg" alt="Profile picture" />
         <div class="message-row__content">
           <span class="message__author">doyeong</span>
           <div class="message__info">
@@ -71,21 +75,12 @@
         <i class="fa-regular fa-square-plus fa-lg"></i>
       </div>
       <div class="reply__column">
-        <input type="text" placeholder="write a message..." />
+        <input type="text" placeholder="write a message..." aria-label="write a message" />
         <i class="far fa-smile-wink"></i>
-        <button>
+        <button aria-label="Send message">
           <i class="fa-solid fa-arrow-up"></i>
         </button>
       </div>
     </form>
-
-    <div id="no-mobile">
-      <span>Your screen is too BIG</span>
-    </div>
-
-    <script
-      src="https://kit.fontawesome.com/4c2ac44dc0.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

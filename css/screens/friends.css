@@ -40,7 +40,7 @@
   border-top: var(--main-border);
   padding-top: 13px;
 }
-.firends-screen__channel-header {
+.friends-screen__channel-header {
   margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
